@@ -1,0 +1,10 @@
+# No external dependencies required.
+# This plugin runs inside Binary Ninja's embedded Python environment.
+#
+# Binary Ninja provides its own Python runtime and API (binaryninja module).
+# Do not install binaryninja via pip — it is only available inside BN itself.
+#
+# The pure-Python logic (JSON parsing, type reconstruction) uses only:
+# - json      (parse GoReSym output)
+# - os        (file path handling)
+# - re        (string pattern matching)

