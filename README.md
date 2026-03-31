@@ -1,4 +1,4 @@
-# binja-goresym
+# BINJA-GORESYM
 
 A Binary Ninja plugin that applies [GoReSym](https://github.com/mandiant/GoReSym) 
 JSON output directly inside the Binary Ninja disassembler.
